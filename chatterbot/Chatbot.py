@@ -2,7 +2,7 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 import os
 
-bot = ChatBot('GRIET')
+bot = ChatBot('Jarvis')
 
 trainer = ListTrainer(bot)
 
@@ -14,7 +14,7 @@ while True:
     try:
         message = str(input('You: '))
         bot_input = bot.get_response(message)
-        print('GRIET:',bot_input)
+        print('Jarvis:',bot_input)
 
     except (KeyboardInterrupt, EOFError, SystemExit):
         break
