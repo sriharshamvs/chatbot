@@ -6,8 +6,8 @@ bot = ChatBot('Jarvis')
 
 trainer = ListTrainer(bot)
 
-for files in os.listdir("/home/mvs/Workspace/Python/Chatbots_tutorials/chatbot_corpus/chatterbot_corpus/data/english"):
-    data = open("/home/mvs/Workspace/Python/Chatbots_tutorials/chatbot_corpus/chatterbot_corpus/data/english/"+files, 'r').readlines()
+for files in os.listdir("/chatterbot/"):
+    data = open("/chatterbot/"+files, 'r').readlines()
     trainer.train(data)
 
 while True:
